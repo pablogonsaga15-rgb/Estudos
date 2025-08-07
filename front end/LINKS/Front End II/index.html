@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 21 - Links</title>
+</head>
+<body>
+    
+    <h1>Tag &lt;a&gt;
+    </h1>
+    <p>Antes de continuarmos, quero deixar claro que ao utilizar o termo <u>Google</u>, eu não me refiro somente so Google, mas sim QUALQUER ferramenta de indexação, o que inclui BING, YAHOO, E Inteligencias Artificiais como o Gemini, Copilot e ChatGPT</p>
+
+<hr>
+
+    <h1>Atributo target</h1>
+    <p>Para fazer uma pesquisa, acesse o <a href="https://www.google.com/">Google</a>.</p>
+
+    
+    <p>Acesse o <a href="https://www.google.com/" target="self">Google em _self</a>.</p>
+
+    <p>Acesse o <a href="https://www.google.com/" target="_blank">Google em _blank</a>.</p>
+
+    <p>Acesse o <a href="https://www.google.com/" target="_parent">Google em _parent</a>.</p>
+
+    <p>Acesse o <a href="https://www.google.com/" target="_top">Google em _top</a>.</p>
+
+
+<hr>
+
+    <h1>Atributo rel (relationship) + EXTERNAL</h1>
+    
+    <p>Acesse um <a href="http://bet365.com/" target="_blank" rel="external nofollow">Link</a> EXTERNAL NOFOLLOW, ou seja, é um link EXTERNO que você não quer que o <b>Google</b> siga.</p>
+
+    <p>Acesse um <a href="http://wikipedia.com/" target="_blank" rel="external next">Link</a> EXTERNAL NEXT, ou seja, para que o <b>Google</b> saiba que mesmo indo para fora do seu Site, está pagina ainda pertence ao conteúdo do seu site.</p>
+
+    <p>Acesse um <a href="http://wikipedia.com/" target="_blank" rel="external prev">Link</a> EXTERNAL PREV, ou seja, para que o <b>Google</b> saiba que este link contém um conteúdo prévio ao seu site, como se fosse um tipo de "introdução" ao seu conteúdo.</p>
+
+    <p>Acesse um <a href="http://wikipedia.com/" target="_blank" rel="external author">Link</a> EXTERNAL AUTHOR, ou seja, para que o <b>Google</b> saiba que este link contém um conteúdo quer pertence ao mesmo Autor desse site.</p>
+
+<hr>
+
+
+<h1>Acesso a Páginas Interna</h1>
+
+    <p>Este é um <a href="pagina2.html">Link</a> que acessa a página 2 do meu próprio site. Esta página está DENTRO da mesma pasta! E como é o PROXIMO conteúdo do nosso site, utilizaremos o atributo rel, com o parametro "next".</p>
+
+    <p>Este é um <a href="EXEMPLO/exemplo1.html" rel="next">Link</a> que acessa a página do meu próprio site, mas desta vez a página pertence a uma outra categoria do meu site, e se encontra dentro de OUTRA PASTA! E como ainda é o PROXIMO conteúdo do nosso site, manteremos o atributo rel, com o parametro "next".</p>
+
+    <h2>Acesso a sesções da Mesma página</h2>
+
+    Para ter pular para seções dentro de uma mesma página utilizamos o destino #, dentro da tag &lt;a&gt;, com id, desta maneira: <a href="#final">Seção Final</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, maiores suscipit aperiam eius nemo libero odio rerum perspiciatis, ut sint nobis recusandae. Quos, dolores minus recusandae laudantium accusamus incidunt ullam.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur eius quasi, ex quod expedita totam ipsum asperiores saepe architecto quia deleniti consequatur earum neque placeat sit iusto eveniet itaque praesentium?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita quia, aut recusandae rerum a sequi voluptatibus sint magnam amet commodi officia incidunt quis. Eos doloremque ipsa eaque natus? Esse!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni rerum vitae error illum molestias vel quibusdam quam, neque eveniet cupiditate deleniti debitis et dolorem consectetur laboriosam consequuntur laborum fugiat minima!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque hic culpa explicabo saepe consequatur necessitatibus quisquam laboriosam totam. Quasi aperiam vitae veniam repellendus necessitatibus cum hic mollitia laudantium? Doloremque, et.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatem ab facilis atque ipsa eos voluptatum nostrum quasi, non fugiat. Quibusdam magnam facere veniam tempore fuga excepturi architecto eum modi!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque! Itaque voluptates nesciunt rerum quisquam fuga fugit. Fuga saepe molestiae veritatis mollitia dolorum vero unde optio, a laborum sapiente omnis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius, molestiae natus consequuntur fugiat ex deleniti vitae assumenda iste! Corrupti ut laudantium ipsum minus animi temporibus eligendi unde enim odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias repellendus facere accusantium magnam rem illo, ipsum voluptatem sint voluptate ad architecto laborum tempora? Porro, nam esse. Eveniet, voluptatem delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit quae atque voluptatem est, dolore, qui earum hic, nostrum dignissimos sit in! Odio quos atque veritatis, eveniet reiciendis dignissimos consectetur!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque! Itaque voluptates nesciunt rerum quisquam fuga fugit. Fuga saepe molestiae veritatis mollitia dolorum vero unde optio, a laborum sapiente omnis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius, molestiae natus consequuntur fugiat ex deleniti vitae assumenda iste! Corrupti ut laudantium ipsum minus animi temporibus eligendi unde enim odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias repellendus facere accusantium magnam rem illo, ipsum voluptatem sint voluptate ad architecto laborum tempora? Porro, nam esse. Eveniet, voluptatem delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit quae atque voluptatem est, dolore, qui earum hic, nostrum dignissimos sit in! Odio quos atque veritatis, eveniet reiciendis dignissimos consectetur!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque! Itaque voluptates nesciunt rerum quisquam fuga fugit. Fuga saepe molestiae veritatis mollitia dolorum vero unde optio, a laborum sapiente omnis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius, molestiae natus consequuntur fugiat ex deleniti vitae assumenda iste! Corrupti ut laudantium ipsum minus animi temporibus eligendi unde enim odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias repellendus facere accusantium magnam rem illo, ipsum voluptatem sint voluptate ad architecto laborum tempora? Porro, nam esse. Eveniet, voluptatem delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit quae atque voluptatem est, dolore, qui earum hic, nostrum dignissimos sit in! Odio quos atque veritatis, eveniet reiciendis dignissimos consectetur!</p>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, itaque! Itaque voluptates nesciunt rerum quisquam fuga fugit. Fuga saepe molestiae veritatis mollitia dolorum vero unde optio, a laborum sapiente omnis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius, molestiae natus consequuntur fugiat ex deleniti vitae assumenda iste! Corrupti ut laudantium ipsum minus animi temporibus eligendi unde enim odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestias repellendus facere accusantium magnam rem illo, ipsum voluptatem sint voluptate ad architecto laborum tempora? Porro, nam esse. Eveniet, voluptatem delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit quae atque voluptatem est, dolore, qui earum hic, nostrum dignissimos sit in! Odio quos atque veritatis, eveniet reiciendis dignissimos consectetur!</p>
+
+    <p id="final">Seção Final - Download</p>
+
+    Para realizar o download, dentro da tag &lt;a&gt; vamos utilizar o atributo DOWNLOAD, que por mais óbvio que possa parecer, ainda temos que trabalhar com ele. Ainda é importante saber que além do arquivo para download, ainda é importante informar o navegador qual tipo de arquivo você está tentando fazer o download, atraves do site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" rel="EXTERNAL" target="_blank">Iana.org</a>
+
+    <ul>
+        <li>Realize o download do arquivo WORD <a href="arquivos/texto.docx" download="arquivos/texto.docx" type="application/msword">aqui</a></li>
+        <li>Realize o download do arquivo PDF <a href="arquivos/texto.rar" download="arquivos/texto.rar" type="application/pdf">aqui</a></li>
+    </ul>
+
+
+
+</body>
+</html>

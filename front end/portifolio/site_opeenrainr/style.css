@@ -1,0 +1,754 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #e5dfdf;
+    line-height: 1.6;
+}
+
+.main-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(211, 5, 139, 0.2);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 2; /* Takes more space */
+    min-width: 600px; /* Ensures it doesn't get too small */
+}
+
+.hero-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.hero-text {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+.hero-text p {
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.hero-text p strong {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.navigation-menu {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Takes remaining space */
+    min-width: 300px; /* Ensures it doesn't get too small */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menu h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.navigation-menu li {
+    margin-bottom: 15px;
+}
+
+.navigation-menu a {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-menu a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-menu a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px auto;
+    width: 80%;
+}
+
+.main-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        min-width: unset;
+        gap: 20px;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navigation-menu {
+        min-width: unset;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #2c3e50;
+}
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+.summary-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.summary-menu li {
+    margin-bottom: 10px;
+}
+.summary-menu a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+.summary-menu a:hover {
+    text-decoration: underline;
+}
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+.back-to-menu, .back-to-main {
+    display: block;
+    margin-top: 20px;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+}
+.back-to-menu:hover, .back-to-main:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 0.9em;
+}
+.source {
+    font-style: italic;
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+    
+    h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    h1 {
+    font-size: 2.5em;
+    }
+    
+    h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    }
+    
+    img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    border: 5px solid #ddd;
+    box-shadow: 3px 3px 10px #ccc;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    img:hover {
+    transform: scale(1.05);
+    }
+    
+    p {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #ddd;
+    }
+    
+    strong {
+    color: #e67e22;
+    font-weight: bold;
+    }
+    
+    /* Efeitos de hover para os parágrafos */
+    p:hover {
+    background-color: #f9f9f9;
+    border-left: 5px solid #3498db;
+    }
+    
+    /* Estilo para o link Prêmio Enrico Fermi */
+    p strong:last-child {
+    color: #27ae60;
+    }
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+        }
+        
+        h1, h2 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+        
+        h1 {
+        font-size: 2.5em;
+        }
+        
+        h2 {
+        font-size: 1.8em;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        }
+        
+        img {
+        display: block;
+        max-width: 80%;
+        height: auto;
+        margin: 20px auto;
+        border: 5px solid #ddd;
+        box-shadow: 3px 3px 10px #ccc;
+        transition: transform 0.3s ease-in-out;
+        }
+        
+        img:hover {
+        transform: scale(1.05);
+        }
+        
+        p {
+        margin-bottom: 15px;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 1px 1px 5px #ddd;
+        }
+        
+        strong {
+        color: #e67e22;
+        font-weight: bold;
+        }
+        
+        /* Efeitos de hover para os parágrafos */
+        p:hover {
+        background-color: #f9f9f9;
+        border-left: 5px solid #3498db;
+        }
+        
+        /* Estilo para o link Prêmio Enrico Fermi */
+        p strong:last-child {
+        color: #27ae60;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* Fundo branco suave para o corpo */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinha o conteúdo ao topo */
+            min-height: 100vh; /* Garante que o corpo ocupa a altura total da tela */
+        }
+        .container {
+            max-width: 800px;
+            width: 100%; /* Garante que o container ocupe a largura máxima definida */
+            margin: 20px 0; /* Margem superior e inferior para espaçamento */
+            background: #fff; /* Fundo branco puro para o conteúdo principal */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 1.6em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        strong {
+            color: #e74c3c; /* Cor para destacar o texto importante */
+        }
+        img {
+            display: block; /* Remove espaço extra abaixo da imagem */
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto; /* Centraliza a imagem e adiciona margem */
+            border-radius: 5px; /* Bordas levemente arredondadas para a imagem */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .back-to-menu {
+            display: inline-block; /* Permite aplicar padding e margin */
+            margin-top: 30px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white !important; /* !important para garantir a cor branca */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-menu:hover {
+            background-color: #2980b9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            /* Adições para centralizar o conteúdo do body */
+            display: flex; /* Transforma o body em um container flexível */
+            flex-direction: column; /* Organiza os itens em coluna (topo para baixo) */
+            align-items: center; /* Centraliza os itens horizontalmente */
+            min-height: 100vh; /* Garante que o body ocupa a altura total da viewport */
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 100%; /* Garante que o cabeçalho ocupe a largura total */
+        }
+        main {
+            max-width: 900px;
+            width: 90%; /* Adicionado para que o main seja responsivo, ocupando 90% da largura disponível até o max-width */
+            margin: 20px auto; /* Mantido para espaçamento, mas a centralização principal virá do body */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex-grow: 1; /* Permite que o main cresça para ocupar o espaço disponível, útil com o footer */
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .summary-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+        .summary-menu li {
+            margin-bottom: 10px;
+        }
+        .summary-menu a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .summary-menu a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        .back-to-menu, .back-to-main {
+            display: block;
+            margin-top: 20px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: right;
+        }
+        .back-to-menu:hover, .back-to-main:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Empurra o rodapé para o final da página */
+            background-color: #2c3e50;
+            color: #fff;
+            font-size: 0.9em;
+            width: 100%; /* Garante que o rodapé ocupe a largura total */
+        }
+        .source {
+            font-style: italic;
+            margin-top: 30px;
+            text-align: center;
+            color: #555;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* Fundo branco suave para o corpo */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinha o conteúdo ao topo */
+            min-height: 100vh; /* Garante que o corpo ocupa a altura total da tela */
+        }
+        .container {
+            max-width: 800px;
+            width: 100%; /* Garante que o container ocupe a largura máxima definida */
+            margin: 20px 0; /* Margem superior e inferior para espaçamento */
+            background: #fff; /* Fundo branco puro para o conteúdo principal */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 1.6em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        strong {
+            color: #e74c3c; /* Cor para destacar o texto importante */
+        }
+        img {
+            display: block; /* Remove espaço extra abaixo da imagem */
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto; /* Centraliza a imagem e adiciona margem */
+            border-radius: 5px; /* Bordas levemente arredondadas para a imagem */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .back-to-menu {
+            display: inline-block; /* Permite aplicar padding e margin */
+            margin-top: 30px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white !important; /* !important para garantir a cor branca */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-menu:hover {
+            background-color: #2980b9;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Reset default body margin */
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px; /* Adjust max-width as needed */
+            margin: 20px auto; /* Add margin-top/bottom and center horizontally */
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center; /* Center main headings */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-align: left; /* Align subheadings to the left */
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify; /* Justify text for better readability */
+        }
+        img {
+            max-width: 100%; /* Ensure image is responsive */
+            height: auto;
+            display: block; /* Remove extra space below image */
+            margin: 20px auto; /* Center image horizontally */
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .back-to-menu {
+            display: block; /* Make the link a block element */
+            width: fit-content; /* Make the width fit content */
+            margin: 30px auto 0; /* Center the button and add top margin */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-menu:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .image-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .image-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            display: block;
+        }
+        .image-item p {
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.4;
+        }
+        .back-to-menu {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 20px;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .back-to-menu:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
