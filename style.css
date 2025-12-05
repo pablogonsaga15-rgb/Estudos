@@ -1,0 +1,93 @@
+/* Importando uma fonte elegante do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0d1a26; /* Preto-azulado escuro */
+    color: #f0f8ff; /* Branco suave para o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para o contêiner do formulário */
+.form-container {
+    background-color: #1a2a38; /* Azul escuro */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    border: 1px solid #2d4559; /* Borda sutil */
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Estilos para o cabeçalho */
+h1 {
+    font-size: 2.2em;
+    color: #64b5f6; /* Azul claro para destaque */
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para a tag label */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #b0c4de; /* Azul acinzentado */
+}
+
+/* Estilos para o campo de entrada (input) */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: #2b4053; /* Azul escuro-acinzentado */
+    border: 1px solid #4a6a8a;
+    border-radius: 8px;
+    color: #f0f8ff;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #64b5f6; /* Borda azul brilhante ao focar */
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+/* Estilos para o botão de envio */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e88e5; /* Azul vibrante */
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: #0d47a1; /* Azul mais escuro ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de "levantar" */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    background-color: #0a3a7b; /* Cor mais escura ao clicar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}

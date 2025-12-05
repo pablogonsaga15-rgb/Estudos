@@ -1,0 +1,147 @@
+
+
+/* Definindo a fonte Inter para todo o corpo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1219; /* Cor de fundo escura */
+}
+/* Classe para simular o fundo com a imagem e o efeito de profundidade */
+.bg-hero-image {
+    /* ***************************************************************************************
+    * CAMINHO LOCAL: Certifique-se de que a imagem 'car_wash_bg.jpg' está em public/img/
+    * A função asset() é do Blade (Laravel) e busca o arquivo na pasta 'public'.
+    ***************************************************************************************
+    */
+    background-image: url('img/car_wash_bg.jpg');
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Overlay escuro para garantir que o texto branco seja legível, conforme a imagem de referência */
+.bg-hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55); /* Overlay preto semi-transparente */
+    z-index: 0;
+}
+
+/* Garantindo que o conteúdo fique acima do overlay */
+.hero-content {
+    z-index: 10;
+    position: relative;
+}
+
+/* Estilo para simular o tablet/formulário visualmente */
+.tablet-mockup {
+    /* Cores e bordas inspiradas na imagem */
+    background-color: #0b1c31; 
+    border: 6px solid #3b82f6; 
+    border-radius: 2rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+#services-section {
+    background-color: #111827; /* gray-900 */
+    padding-top: 80px;
+    padding-bottom: 6rem; /* Mais espaçamento no final */
+}
+
+.section-header {
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.service-card {
+    min-height: 480px; /* Altura mínima maior */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5rem; /* Mais arredondado */
+    overflow: hidden;
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+}
+.service-card:hover {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 30px 60px -15px rgba(59, 130, 246, 0.6); /* Sombra azul intensa no hover */
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* Gradiente mais forte */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.9) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.card-title-services {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.card-header {
+    /* Estilo do cabeçalho fora do overlay */
+    background-color: #3b82f6; 
+    color: white;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 1rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-shadow: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade Grid de Serviços */
+@media (min-width: 1024px) { 
+    .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 767px) {
+     .hero-content {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+     .card-title {
+        font-size: 2.75rem;
+    }
+    .nav-desktop-links {
+        display: none;
+    }
+    .services-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
